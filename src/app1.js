@@ -8,7 +8,7 @@ const $button4 = $('#divide2')
 const $number = $('#number')
 const n = localStorage.getItem('n')
 $number.text(n || 100)
-
+// buttons
 $button1.on('click', () => {
     let n = parseInt($number.text())
     n += 1
@@ -36,4 +36,5 @@ $button4.on('click', () => {
     localStorage.setItem('n', n)
     $number.text(n)
 })
+
 
